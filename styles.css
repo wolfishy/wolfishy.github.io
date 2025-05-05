@@ -1,22 +1,78 @@
+/* Reset styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     overflow: hidden;
 }
 
-.glassmorphism {
-    background: rgba(255, 255, 255, 0.15);
+/* Container */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Profile header */
+.header {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Links section */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.glassmorphic-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 20px;
     border-radius: 16px;
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.glassmorphic-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    opacity: 0.8;
 }
