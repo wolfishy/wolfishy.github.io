@@ -1,28 +1,28 @@
-/* Reset styles */
+/* General Body Styling */
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #9face6);
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: #fff;
 }
 
-/* Container */
+/* Container Layout */
 .container {
     text-align: center;
-    width: 90%;
     max-width: 600px;
+    width: 90%;
     padding: 20px;
 }
 
-/* Profile header */
-.header {
-    margin-bottom: 30px;
+/* Profile Section */
+.profile-section {
+    margin-bottom: 20px;
 }
 
 .profile-pic {
@@ -30,8 +30,8 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(255, 255, 255, 0.5);
     margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 h1 {
@@ -41,17 +41,17 @@ h1 {
 
 p {
     font-size: 1rem;
-    margin: 0;
+    opacity: 0.8;
 }
 
-/* Links section */
-.links {
+/* Links Section */
+.links-section {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.glassmorphic-link {
+.link-item {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
@@ -61,18 +61,18 @@ p {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.glassmorphic-link:hover {
+.link-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
+/* Footer Section */
 footer {
     margin-top: 30px;
     font-size: 0.8rem;
-    opacity: 0.8;
+    opacity: 0.6;
 }
